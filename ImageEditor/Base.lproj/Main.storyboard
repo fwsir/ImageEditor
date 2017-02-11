@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="une-4W-kLK">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="qVo-4T-51Y"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="New" image="new" id="1Aa-7w-TcW"/>
+                                    <tabBarItem tag="1" title="Edit" image="edit" id="K2w-WF-fAw"/>
+                                    <tabBarItem tag="2" title="Save" image="save" id="ysR-cd-fEg"/>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="UZs-Nk-RC4"/>
+                                </connections>
+                            </tabBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4n5-8u-kuT">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LH8-CL-Onv">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LH8-CL-Onv" firstAttribute="centerY" secondItem="4n5-8u-kuT" secondAttribute="centerY" id="13m-1a-Afk"/>
+                                    <constraint firstItem="LH8-CL-Onv" firstAttribute="leading" secondItem="4n5-8u-kuT" secondAttribute="leading" id="JIh-1n-PHS"/>
+                                    <constraint firstItem="LH8-CL-Onv" firstAttribute="top" secondItem="4n5-8u-kuT" secondAttribute="top" id="tTf-w6-AlQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="LH8-CL-Onv" secondAttribute="bottom" id="vGN-oR-Bou"/>
+                                    <constraint firstAttribute="trailing" secondItem="LH8-CL-Onv" secondAttribute="trailing" id="vbh-89-gz7"/>
+                                    <constraint firstItem="LH8-CL-Onv" firstAttribute="centerX" secondItem="4n5-8u-kuT" secondAttribute="centerX" id="wes-64-F8O"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="lou-uO-HD5"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4n5-8u-kuT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="16x-xh-4R9"/>
+                            <constraint firstItem="4n5-8u-kuT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AG6-lT-108"/>
+                            <constraint firstItem="une-4W-kLK" firstAttribute="top" secondItem="4n5-8u-kuT" secondAttribute="bottom" id="JaU-KJ-t14"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="une-4W-kLK" secondAttribute="bottom" id="QcD-Z3-VZh"/>
+                            <constraint firstAttribute="trailing" secondItem="4n5-8u-kuT" secondAttribute="trailing" id="j3S-sN-fgN"/>
+                            <constraint firstItem="une-4W-kLK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nOf-jy-yGA"/>
+                            <constraint firstAttribute="trailing" secondItem="une-4W-kLK" secondAttribute="trailing" id="rbD-rX-h2w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="LH8-CL-Onv" id="Kk5-FR-wGE"/>
+                        <outlet property="scrollView" destination="4n5-8u-kuT" id="Okb-gf-MfH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="edit" width="30" height="30"/>
+        <image name="new" width="30" height="30"/>
+        <image name="save" width="30" height="30"/>
+    </resources>
+</document>

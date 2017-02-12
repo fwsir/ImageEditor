@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75B31D77982EB67A1529EC62 /* libPods-ImageEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E4784DDD35C1C97591125D /* libPods-ImageEditor.a */; };
 		FED848041E4EE76700356C8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FED848031E4EE76700356C8C /* main.m */; };
 		FED848071E4EE76700356C8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FED848061E4EE76700356C8C /* AppDelegate.m */; };
 		FED8480A1E4EE76700356C8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED848091E4EE76700356C8C /* ViewController.m */; };
@@ -14,9 +15,25 @@
 		FED8480F1E4EE76700356C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED8480E1E4EE76700356C8C /* Assets.xcassets */; };
 		FED848121E4EE76700356C8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED848101E4EE76700356C8C /* LaunchScreen.storyboard */; };
 		FED8481A1E4EE79300356C8C /* CLImageEditor.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FED848191E4EE79300356C8C /* CLImageEditor.bundle */; };
+		FED8481F1E500B8500356C8C /* ImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8481D1E500B8500356C8C /* ImageEditorViewController.m */; };
+		FED848201E500B8500356C8C /* ImageEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED8481E1E500B8500356C8C /* ImageEditorViewController.xib */; };
+		FED848231E505CB100356C8C /* ToolBarMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FED848221E505CB100356C8C /* ToolBarMenuItem.m */; };
+		FED848251E505CC700356C8C /* ToolBarMenuItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED848241E505CC700356C8C /* ToolBarMenuItem.xib */; };
+		FED848291E50756000356C8C /* ImageToolBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FED848281E50756000356C8C /* ImageToolBase.m */; };
+		FED8482C1E50757900356C8C /* AdjustmentTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8482B1E50757900356C8C /* AdjustmentTool.m */; };
+		FED8482F1E50758C00356C8C /* BlurTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8482E1E50758C00356C8C /* BlurTool.m */; };
+		FED848321E50759C00356C8C /* ClippingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FED848311E50759C00356C8C /* ClippingTool.m */; };
+		FED848351E5075AC00356C8C /* DrawTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FED848341E5075AC00356C8C /* DrawTool.m */; };
+		FED848381E5075B800356C8C /* EffectTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FED848371E5075B800356C8C /* EffectTool.m */; };
+		FED8483B1E5075C800356C8C /* FilterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8483A1E5075C800356C8C /* FilterTool.m */; };
+		FED8483E1E5075D700356C8C /* RotateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8483D1E5075D700356C8C /* RotateTool.m */; };
+		FED848411E5075E500356C8C /* ToneCurveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FED848401E5075E500356C8C /* ToneCurveTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280188301FF3E2A6324ADACC /* Pods-ImageEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageEditor/Pods-ImageEditor.debug.xcconfig"; sourceTree = "<group>"; };
+		92339611E76E39C6F4B0D60A /* Pods-ImageEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageEditor/Pods-ImageEditor.release.xcconfig"; sourceTree = "<group>"; };
+		F5E4784DDD35C1C97591125D /* libPods-ImageEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImageEditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED847FF1E4EE76700356C8C /* ImageEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED848031E4EE76700356C8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FED848051E4EE76700356C8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +45,30 @@
 		FED848111E4EE76700356C8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FED848131E4EE76700356C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FED848191E4EE79300356C8C /* CLImageEditor.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CLImageEditor.bundle; sourceTree = "<group>"; };
+		FED8481C1E500B8500356C8C /* ImageEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageEditorViewController.h; sourceTree = "<group>"; };
+		FED8481D1E500B8500356C8C /* ImageEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageEditorViewController.m; sourceTree = "<group>"; };
+		FED8481E1E500B8500356C8C /* ImageEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageEditorViewController.xib; sourceTree = "<group>"; };
+		FED848211E505CB100356C8C /* ToolBarMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolBarMenuItem.h; sourceTree = "<group>"; };
+		FED848221E505CB100356C8C /* ToolBarMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolBarMenuItem.m; sourceTree = "<group>"; };
+		FED848241E505CC700356C8C /* ToolBarMenuItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolBarMenuItem.xib; sourceTree = "<group>"; };
+		FED848271E50756000356C8C /* ImageToolBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageToolBase.h; sourceTree = "<group>"; };
+		FED848281E50756000356C8C /* ImageToolBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageToolBase.m; sourceTree = "<group>"; };
+		FED8482A1E50757900356C8C /* AdjustmentTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustmentTool.h; sourceTree = "<group>"; };
+		FED8482B1E50757900356C8C /* AdjustmentTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustmentTool.m; sourceTree = "<group>"; };
+		FED8482D1E50758C00356C8C /* BlurTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurTool.h; sourceTree = "<group>"; };
+		FED8482E1E50758C00356C8C /* BlurTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurTool.m; sourceTree = "<group>"; };
+		FED848301E50759C00356C8C /* ClippingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClippingTool.h; sourceTree = "<group>"; };
+		FED848311E50759C00356C8C /* ClippingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClippingTool.m; sourceTree = "<group>"; };
+		FED848331E5075AC00356C8C /* DrawTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTool.h; sourceTree = "<group>"; };
+		FED848341E5075AC00356C8C /* DrawTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTool.m; sourceTree = "<group>"; };
+		FED848361E5075B800356C8C /* EffectTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectTool.h; sourceTree = "<group>"; };
+		FED848371E5075B800356C8C /* EffectTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EffectTool.m; sourceTree = "<group>"; };
+		FED848391E5075C800356C8C /* FilterTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterTool.h; sourceTree = "<group>"; };
+		FED8483A1E5075C800356C8C /* FilterTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterTool.m; sourceTree = "<group>"; };
+		FED8483C1E5075D700356C8C /* RotateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateTool.h; sourceTree = "<group>"; };
+		FED8483D1E5075D700356C8C /* RotateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateTool.m; sourceTree = "<group>"; };
+		FED8483F1E5075E500356C8C /* ToneCurveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToneCurveTool.h; sourceTree = "<group>"; };
+		FED848401E5075E500356C8C /* ToneCurveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToneCurveTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +76,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B31D77982EB67A1529EC62 /* libPods-ImageEditor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16012B285AD3694E9F09E8F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				280188301FF3E2A6324ADACC /* Pods-ImageEditor.debug.xcconfig */,
+				92339611E76E39C6F4B0D60A /* Pods-ImageEditor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E6DAF7BD1B2CAF48C4935D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5E4784DDD35C1C97591125D /* libPods-ImageEditor.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FED847F61E4EE76700356C8C = {
 			isa = PBXGroup;
 			children = (
 				FED848011E4EE76700356C8C /* ImageEditor */,
 				FED848001E4EE76700356C8C /* Products */,
+				16012B285AD3694E9F09E8F0 /* Pods */,
+				8E6DAF7BD1B2CAF48C4935D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +121,7 @@
 		FED848011E4EE76700356C8C /* ImageEditor */ = {
 			isa = PBXGroup;
 			children = (
+				FED8481B1E500B6600356C8C /* ImageEditor */,
 				FED848191E4EE79300356C8C /* CLImageEditor.bundle */,
 				FED848051E4EE76700356C8C /* AppDelegate.h */,
 				FED848061E4EE76700356C8C /* AppDelegate.m */,
@@ -82,6 +144,45 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FED8481B1E500B6600356C8C /* ImageEditor */ = {
+			isa = PBXGroup;
+			children = (
+				FED848261E5074DA00356C8C /* ToolMenuItem */,
+				FED8481C1E500B8500356C8C /* ImageEditorViewController.h */,
+				FED8481D1E500B8500356C8C /* ImageEditorViewController.m */,
+				FED8481E1E500B8500356C8C /* ImageEditorViewController.xib */,
+				FED848211E505CB100356C8C /* ToolBarMenuItem.h */,
+				FED848221E505CB100356C8C /* ToolBarMenuItem.m */,
+				FED848241E505CC700356C8C /* ToolBarMenuItem.xib */,
+			);
+			name = ImageEditor;
+			sourceTree = "<group>";
+		};
+		FED848261E5074DA00356C8C /* ToolMenuItem */ = {
+			isa = PBXGroup;
+			children = (
+				FED848271E50756000356C8C /* ImageToolBase.h */,
+				FED848281E50756000356C8C /* ImageToolBase.m */,
+				FED8482A1E50757900356C8C /* AdjustmentTool.h */,
+				FED8482B1E50757900356C8C /* AdjustmentTool.m */,
+				FED8482D1E50758C00356C8C /* BlurTool.h */,
+				FED8482E1E50758C00356C8C /* BlurTool.m */,
+				FED848301E50759C00356C8C /* ClippingTool.h */,
+				FED848311E50759C00356C8C /* ClippingTool.m */,
+				FED848331E5075AC00356C8C /* DrawTool.h */,
+				FED848341E5075AC00356C8C /* DrawTool.m */,
+				FED848361E5075B800356C8C /* EffectTool.h */,
+				FED848371E5075B800356C8C /* EffectTool.m */,
+				FED848391E5075C800356C8C /* FilterTool.h */,
+				FED8483A1E5075C800356C8C /* FilterTool.m */,
+				FED8483C1E5075D700356C8C /* RotateTool.h */,
+				FED8483D1E5075D700356C8C /* RotateTool.m */,
+				FED8483F1E5075E500356C8C /* ToneCurveTool.h */,
+				FED848401E5075E500356C8C /* ToneCurveTool.m */,
+			);
+			name = ToolMenuItem;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FED848161E4EE76700356C8C /* Build configuration list for PBXNativeTarget "ImageEditor" */;
 			buildPhases = (
+				E87EF34CE4EE736A4AFF0C27 /* [CP] Check Pods Manifest.lock */,
 				FED847FB1E4EE76700356C8C /* Sources */,
 				FED847FC1E4EE76700356C8C /* Frameworks */,
 				FED847FD1E4EE76700356C8C /* Resources */,
+				C0FCEEA81D16F617F3DD4829 /* [CP] Embed Pods Frameworks */,
+				E8DAFAE39C1A112F1B0BAE21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +246,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FED848121E4EE76700356C8C /* LaunchScreen.storyboard in Resources */,
+				FED848251E505CC700356C8C /* ToolBarMenuItem.xib in Resources */,
+				FED848201E500B8500356C8C /* ImageEditorViewController.xib in Resources */,
 				FED8481A1E4EE79300356C8C /* CLImageEditor.bundle in Resources */,
 				FED8480F1E4EE76700356C8C /* Assets.xcassets in Resources */,
 				FED8480D1E4EE76700356C8C /* Main.storyboard in Resources */,
@@ -150,14 +256,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C0FCEEA81D16F617F3DD4829 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageEditor/Pods-ImageEditor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E87EF34CE4EE736A4AFF0C27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E8DAFAE39C1A112F1B0BAE21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageEditor/Pods-ImageEditor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FED847FB1E4EE76700356C8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FED8482F1E50758C00356C8C /* BlurTool.m in Sources */,
 				FED8480A1E4EE76700356C8C /* ViewController.m in Sources */,
 				FED848071E4EE76700356C8C /* AppDelegate.m in Sources */,
+				FED848291E50756000356C8C /* ImageToolBase.m in Sources */,
 				FED848041E4EE76700356C8C /* main.m in Sources */,
+				FED8481F1E500B8500356C8C /* ImageEditorViewController.m in Sources */,
+				FED8482C1E50757900356C8C /* AdjustmentTool.m in Sources */,
+				FED8483B1E5075C800356C8C /* FilterTool.m in Sources */,
+				FED848231E505CB100356C8C /* ToolBarMenuItem.m in Sources */,
+				FED848381E5075B800356C8C /* EffectTool.m in Sources */,
+				FED848321E50759C00356C8C /* ClippingTool.m in Sources */,
+				FED848351E5075AC00356C8C /* DrawTool.m in Sources */,
+				FED8483E1E5075D700356C8C /* RotateTool.m in Sources */,
+				FED848411E5075E500356C8C /* ToneCurveTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +440,7 @@
 		};
 		FED848171E4EE76700356C8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 280188301FF3E2A6324ADACC /* Pods-ImageEditor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D7BX896CL3;
@@ -282,11 +448,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devil.ImageEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FED848181E4EE76700356C8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92339611E76E39C6F4B0D60A /* Pods-ImageEditor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D7BX896CL3;
@@ -294,6 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devil.ImageEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -316,6 +485,7 @@
 				FED848181E4EE76700356C8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
